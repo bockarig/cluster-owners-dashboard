@@ -1,6 +1,7 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 @import "./tokens/colors.css";
+@import "./tokens/fonts.css";
 @import "./tokens/radius.css";
 @import "./tokens/shadcn.css";
 @import "./creightit-themes.css";
@@ -139,6 +140,7 @@
 }
 
 @theme {
+  --font-sans: var(--sora-sans);
   --radius-xs: var(--radius-1);
   --radius-sm: var(--radius-2);
   --radius-md: var(--radius-3);
