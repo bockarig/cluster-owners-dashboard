@@ -1,0 +1,187 @@
+@import "@radix-ui/colors/black-alpha.css";
+@import "@radix-ui/colors/white-alpha.css";
+
+@import "../scales/slate.css";
+@import "../scales/cyan.css";
+@import "../scales/green.css";
+@import "../scales/red.css";
+@import "../scales/amber.css";
+@import "../scales/orange.css";
+
+:root {
+  /** Base Tokens **/
+  /* Contents */
+  --cnt-primary: var(--gray-12);
+  --cnt-secondary: #5d5e60;
+  --cnt-tertiary: #a2a5a9;
+  --cnt-on-inverse: var(--white-a12);
+
+  --cnt-accent: #7910ff;
+  --cnt-info: #0068d6;
+  --cnt-success: #128700;
+  --cnt-warning: #e32d00;
+  --cnt-danger: #e00018;
+
+  /* Backgrounds */
+  --bg-main: oklch(1 0 0);
+  --bg-soft: var(--gray-3);
+  --bg-inverse: var(--black-a12);
+
+  --bg-accent-soft: var(--accent-3);
+  --bg-info-soft: var(--accent-3);
+  --bg-success-soft: var(--green-3);
+  --bg-warning-soft: var(--amber-3);
+  --bg-danger-soft: var(--red-3);
+
+  --bg-accent-bold: var(--accent-10);
+  --bg-info-bold: var(--amber-9);
+  --bg-success-bold: var(--green-9);
+  --bg-warning-bold: var(--amber-9);
+  --bg-danger-bold: var(--red-9);
+
+  /* Borders */
+  --brd-line: var(--gray-5);
+  --brd-control: var(--gray-7);
+  --brd-ring: var(--gray-8);
+
+  --brd-accent: var(--accent-8);
+  --brd-info: var(--amber-8);
+  --brd-success: var(--green-8);
+  --brd-warning: var(--amber-8);
+  --brd-danger: var(--red-8);
+
+  /* Page Backgrounds */
+  --pagebg-main: var(--gray-2);
+  --pagebg-alternative: var(--gray-2);
+
+  /* -———————————————————————————————————————————- */
+
+  /** State Tokens **/
+  /* Contents */
+  --cnt-accent-hover: #7910ff;
+  --cnt-accent-pressed: #7910ff;
+  --cnt-info-hover: #0068d6;
+  --cnt-info-pressed: #0063cc;
+  --cnt-success-hover: #0c7e3a;
+  --cnt-success-pressed: #0b7938;
+  --cnt-warning-hover: #c23d00;
+  --cnt-warning-pressed: #c23d00;
+  --cnt-danger-hover: #d60017;
+  --cnt-danger-pressed: #cc0016;
+
+  /* Backgrounds */
+  --bg-main-hover: #f1f1f3;
+  --bg-main-pressed: #ebebed;
+  --bg-alternative-hover: #eeeef2;
+  --bg-alternative-pressed: #e5e5eb;
+
+  --bg-accent-soft-hover: #ebdbff;
+  --bg-accent-soft-pressed: #e8d6ff;
+  --bg-info-soft-hover: #e0f0ff;
+  --bg-info-soft-pressed: #d6ebff;
+  --bg-success-soft-hover: #e6faef;
+  --bg-success-soft-pressed: #e6faef;
+  --bg-warning-soft-hover: #ffede0;
+  --bg-warning-soft-pressed: #ffeadb;
+  --bg-danger-soft-hover: #ffe5e8;
+  --bg-danger-soft-pressed: #ffdbdf;
+
+  --bg-accent-bold-hover: var(--accent-9);
+  --bg-accent-bold-pressed: #4c00ad;
+  --bg-info-bold-hover: #0051f5;
+  --bg-info-bold-pressed: #0047d3;
+  --bg-success-bold-hover: #0a7034;
+  --bg-success-bold-pressed: #09672f;
+  --bg-warning-bold-hover: #e55500;
+  --bg-warning-bold-pressed: #d14d00;
+  --bg-danger-bold-hover: #b80014;
+  --bg-danger-bold-pressed: #a30011;
+}
+
+.dark {
+  /** Base Tokens **/
+  /* Contents */
+  /*--cnt-primary: #020a19;*/
+  /*--cnt-secondary: #5d5e60;*/
+  /*--cnt-tertiary: #a2a5a9;*/
+  /*--cnt-on-bold: #ffffff;*/
+
+  /*--cnt-accent: #7910ff;*/
+  /*--cnt-info: #0068d6;*/
+  /*--cnt-success: #128700;*/
+  /*--cnt-warning: #e32d00;*/
+  /*--cnt-danger: #e00018;*/
+
+  /* Backgrounds */
+  --bg-main: var(--gray-3);
+  --bg-soft: var(--gray-4);
+
+  --bg-accent-soft: #f4ebff;
+  /*--bg-info-soft: #ebf5ff;*/
+  /*--bg-success-soft: #e6faef;*/
+  /*--bg-warning-soft: #fff3eb;*/
+  /*--bg-danger-soft: #fff0f1;*/
+
+  /*--bg-accent-bold: #7910ff;*/
+  /*--bg-info-bold: #0759ff;*/
+  /*--bg-success-bold: #0c823c;*/
+  /*--bg-warning-bold: #fa5c00;*/
+  /*--bg-danger-bold: #d50017;*/
+
+  /* Borders */
+  /*--brd-main: #dcdcdc;*/
+  /*--brd-alternative: #c6c6c6;*/
+
+  /*--brd-accent: #7910ff;*/
+  /*--brd-info: #0068d6;*/
+  /*--brd-success: #128700;*/
+  /*--brd-warning: #e32d00;*/
+  /*--brd-danger: #e00018;*/
+
+  /* Page Backgrounds */
+  --pagebg-main: #0a0a0a;
+  --pagebg-alternative: var(--gray-2);
+
+  /* -———————————————————————————————————————————- */
+
+  /** State Tokens **/
+  /* Contents */
+  /*--cnt-accent-hover: #7910ff;*/
+  /*--cnt-accent-pressed: #7910ff;*/
+  /*--cnt-info-hover: #0068d6;*/
+  /*--cnt-info-pressed: #0063cc;*/
+  /*--cnt-success-hover: #0c7e3a;*/
+  /*--cnt-success-pressed: #0b7938;*/
+  /*--cnt-warning-hover: #c23d00;*/
+  /*--cnt-warning-pressed: #c23d00;*/
+  /*--cnt-danger-hover: #d60017;*/
+  /*--cnt-danger-pressed: #cc0016;*/
+
+  /* Backgrounds */
+  /*--bg-main-hover: #f1f1f3;*/
+  /*--bg-main-pressed: #ebebed;*/
+  /*--bg-alternative-hover: #eeeef2;*/
+  /*--bg-alternative-pressed: #e5e5eb;*/
+
+  /*--bg-accent-soft-hover: #ebdbff;*/
+  /*--bg-accent-soft-pressed: #e8d6ff;*/
+  /*--bg-info-soft-hover: #e0f0ff;*/
+  /*--bg-info-soft-pressed: #d6ebff;*/
+  /*--bg-success-soft-hover: #e6faef;*/
+  /*--bg-success-soft-pressed: #e6faef;*/
+  /*--bg-warning-soft-hover: #ffede0;*/
+  /*--bg-warning-soft-pressed: #ffeadb;*/
+  /*--bg-danger-soft-hover: #ffe5e8;*/
+  /*--bg-danger-soft-pressed: #ffdbdf;*/
+
+  /*--bg-accent-bold-hover: #6000db;*/
+  /*--bg-accent-bold-pressed: #4c00ad;*/
+  /*--bg-info-bold-hover: #0051f5;*/
+  /*--bg-info-bold-pressed: #0047d3;*/
+  /*--bg-success-bold-hover: #0a7034;*/
+  /*--bg-success-bold-pressed: #09672f;*/
+  /*--bg-warning-bold-hover: #e55500;*/
+  /*--bg-warning-bold-pressed: #d14d00;*/
+  /*--bg-danger-bold-hover: #b80014;*/
+  /*--bg-danger-bold-pressed: #a30011;*/
+}

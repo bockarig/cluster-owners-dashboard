@@ -1,0 +1,56 @@
+.creightit {
+  &:where([data-scaling="90%"]) {
+    --scaling: 0.9;
+  }
+  &:where([data-scaling="95%"]) {
+    --scaling: 0.95;
+  }
+  &:where([data-scaling="100%"]) {
+    --scaling: 1;
+  }
+  &:where([data-scaling="105%"]) {
+    --scaling: 1.05;
+  }
+  &:where([data-scaling="110%"]) {
+    --scaling: 1.1;
+  }
+}
+
+[data-radius] {
+  --radius-1: calc(3px * var(--scaling) * var(--radius-factor)); /* xs <- 2xp */
+  --radius-2: calc(4px * var(--scaling) * var(--radius-factor)); /* sm <- 4xp */
+  --radius-3: calc(6px * var(--scaling) * var(--radius-factor)); /* md <- 6xp */
+  --radius-4: calc(8px * var(--scaling) * var(--radius-factor)); /* lg <- 8xp */
+  --radius-5: calc(12px * var(--scaling) * var(--radius-factor)); /* xl <- 12xp */
+  --radius-6: calc(16px * var(--scaling) * var(--radius-factor)); /* 2xl <- 16xp */
+}
+
+[data-radius="none"] {
+  --radius-factor: 0;
+  --radius-full: 0px;
+  --radius-thumb: 0.5px;
+}
+
+[data-radius="small"] {
+  --radius-factor: 0.75;
+  --radius-full: 0px;
+  --radius-thumb: 0.5px;
+}
+
+[data-radius="medium"] {
+  --radius-factor: 1;
+  --radius-full: 0px;
+  --radius-thumb: 9999px;
+}
+
+[data-radius="large"] {
+  --radius-factor: 1.5;
+  --radius-full: 0px;
+  --radius-thumb: 9999px;
+}
+
+[data-radius="full"] {
+  --radius-factor: 1.5;
+  --radius-full: 9999px;
+  --radius-thumb: 9999px;
+}
