@@ -2,6 +2,7 @@
 @import "tw-animate-css";
 @import "./tokens/colors.css";
 @import "./tokens/radius.css";
+@import "./tokens/shadcn.css";
 @import "./creightit-themes.css";
 @import "./theme.css";
 

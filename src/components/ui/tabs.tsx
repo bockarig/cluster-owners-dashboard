@@ -30,7 +30,7 @@ const variantStyles: Record<TabsListVariant, string> = {
   ),
   solid: cx(
     // base
-    "inline-flex items-center justify-center rounded-full p-1",
+    "inline-flex items-center justify-center rounded-md p-1",
     // background color
     "bg-soft"
   ),
@@ -72,7 +72,7 @@ function getVariantStyles(tabVariant: TabsListVariant) {
     case "solid":
       return cx(
         // base
-        "inline-flex items-center justify-center rounded-full px-3 py-1 text-sm font-medium whitespace-nowrap ring-1 transition-all ring-inset",
+        "inline-flex items-center justify-center rounded-md px-3 py-1 text-sm font-medium whitespace-nowrap ring-1 transition-all ring-inset",
         // text color
         "text-gray-500 dark:text-gray-400",
         // hover

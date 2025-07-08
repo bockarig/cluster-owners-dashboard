@@ -31,6 +31,12 @@
   --radius-thumb: 0.5px;
 }
 
+[data-radius="tiny"] {
+  --radius-factor: 0.35;
+  --radius-full: 0px;
+  --radius-thumb: 0.5px;
+}
+
 [data-radius="small"] {
   --radius-factor: 0.75;
   --radius-full: 0px;
